@@ -76,22 +76,22 @@
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-12.1"/>
 
     <!-- Include external/bash for bash support -->
-    <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-19.1"/>
+    <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-20.0"/>
 
     <!-- Include external/libncurses for bash and nano support -->
-    <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-19.1"/>
+    <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-20.0"/>
 
     <!-- Include external/nano for nano support -->
-    <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-19.1"/>
+    <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-20.0"/>
 
     <!-- Include ntfs_3g for NTFS support -->
-    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-18.1"/>
+    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="LineageOS" revision="lineage-20.0"/>
 
     <!-- Include for legacy wrappedkey support -->
-    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="LineageOS" revision="lineage-19.1" />
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="LineageOS" revision="lineage-20.0" />
 
     <!-- Include lineage-tools for lzma support -->
-    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-19.1"/>
+    <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="LineageOS" revision="lineage-20.0"/>
 
     <!-- Common qcom repos -->
     <project name="android_device_qcom_common" path="device/qcom/common" remote="TeamWin" revision="android-12.1" />
@@ -105,6 +105,11 @@
     <project name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="LineageOS" revision="lineage-19.1" />
     <project name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="LineageOS" revision="lineage-19.1" />
     <project name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="LineageOS" revision="lineage-19.1" />
+
+    <!-- pixel kernel -->
+    <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
+    <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="android_prebuilts_clang_kernel_linux-x86_clang-r416183b" remote="LineageOS" revision="lineage-20.0" clone-depth="1" />
+    <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.106" />
 
     <!-- LAST: Remove unused projects for minimal manifest -->
     <include name="remove-minimal.xml"/>
